@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0c0c0c;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    margin-top: 20px;
+}
+
+header {
+    padding: 30px 20px 10px;
+    background: #111;
+    border-bottom: 2px solid gold;
+}
+
+h1 {
+    color: gold;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #00ffc3;
+    font-size: 1.8em;
+}
+
+section {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: gold;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffd700;
+}
+
+footer {
+    background: #111;
+    padding: 15px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #333; 
+}
+
+/* ANIMINATIONS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint"
+    content="width=device-width, initial-scale=1.0"/>
+    <title>Wayne | Python Developer</title>
+    <link rel="stylesheet"
+    href="style.css"/>
+    <link
+    href="https://fronts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header class="fade-in">
+        <img src="images/wayne_logologo.png" alt="King Logo" class="logo" />
+        <h1>Sifiso Moyo</h1>
+        <p class="subtitle">Python Developer | Automation & AI Enthusiast | Web Developer</p>
+    </header>
+
+    <section class="about fade-in">
+        <h2>About Me</h2>
+        <p>
+            I help businesses and individuals save time by building powerful Python scripts,
+            automation bots, and smart AI tools. I also develop and maintain websites. 
+        </p>
+    </section>
+
+    <section class="services fade-in">
+        <h2>My Services</h2>
+        <ul>
+            <li>✔️ Python Automation Scripts</li>
+            <li>✔️ Data Scraping and File Processing</li>
+            <li>✔️ AI-Powered Tools (LangChain, GPT)</li>
+            <li>✔️ Task Bots (PDF, Excel, Web)</li>
+            <li>✔️ Website Development</li>  
+        </ul>
+        <a href="https://www.fiverr.com/sifiso_55" target="_blank"
+        class="btn">Hire me on Fiverr</a>
+        <a href="https://wa.me/263717015657" target="_blank"
+        class="btn">WhatsApp</a>
+        <a href="https://t.me/@West404" target="_blank"
+        class="btn">Telegram</a>
+    </section>
+
+    <section class="projects fade-in">
+        <h2>Sample Projects</h2>
+        <p>
+            Projects under construction 👨🏿‍🔧.
+            Soon you will see tools and automation demos here
+        </p>
+    </section>
+
+    <section class="contact fade-in">
+        <h2>Contact Me</h2>
+        <p>Email: waynesifiso71@gmail.com</p>
+        <p>WhatsApp: +263 78 964 9257 | +263 71 015 657</p>
+        <p>Telegram: @West404</p>
+    </section>
+
+    <footer class="fade-in">
+        <p>Made with ❤️ + 🧠 by Wayne</p>
+    </footer>
+
+    <script>
+        //simple fade-in on scroll
+        const faders = document.querySelectorAll('.fade-in')
+        const appearOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        const appearOnScroll = new IntersectionObserver((entries, obsever) => 
+    {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('appear');
+            obsever.unobserve(entry.target);
+        });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+    </script>
+</body>
+</html>
