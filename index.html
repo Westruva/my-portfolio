@@ -1,82 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewpoint"
-    content="width=device-width, initial-scale=1.0"/>
-    <title>Wayne | Python Developer</title>
-    <link rel="stylesheet"
-    href="style.css"/>
-    <link
-    href="https://fronts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCYBER | Let the Code Work for You</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f1e7;
+      color: #222;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    .section {
+      padding: 2em;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #111;
+      display: inline-block;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1em;
+      margin: 1em 0;
+    }
+    .contact {
+      background: #111;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+    a {
+      color: #0066cc;
+    }
+  </style>
 </head>
 <body>
-    <header class="fade-in">
-        <img src="images/wayne_logologo.png" alt="King Logo" class="logo" />
-        <h1>Sifiso Moyo</h1>
-        <p class="subtitle">Python Developer | Automation & AI Enthusiast | Web Developer</p>
-    </header>
+  <header>
+    <h1>What can WCYBER do for you?</h1>
+    <p>LET THE CODE WORK FOR YOU</p>
+  </header>
 
-    <section class="about fade-in">
-        <h2>About Me</h2>
-        <p>
-            I help businesses and individuals save time by building powerful Python scripts,
-            automation bots, and smart AI tools. I also develop and maintain websites. 
-        </p>
-    </section>
+  <div class="section">
+    <h2>Website Dev and Web Apps</h2>
+    <div class="card">
+      <p>Have your website ready with all the stuff you want to be seen by the world. No need for app download when you can host it online.</p>
+    </div>
 
-    <section class="services fade-in">
-        <h2>My Services</h2>
-        <ul>
-            <li>✔️ Python Automation Scripts</li>
-            <li>✔️ Data Scraping and File Processing</li>
-            <li>✔️ AI-Powered Tools (LangChain, GPT)</li>
-            <li>✔️ Task Bots (PDF, Excel, Web)</li>
-            <li>✔️ Website Development</li>  
-        </ul>
-        <a href="https://www.fiverr.com/sifiso_55" target="_blank"
-        class="btn">Hire me on Fiverr</a>
-        <a href="https://wa.me/263717015657" target="_blank"
-        class="btn">WhatsApp</a>
-        <a href="https://t.me/@West404" target="_blank"
-        class="btn">Telegram</a>
-    </section>
+    <h2>AI Chatbots & Automation</h2>
+    <div class="card">
+      <p>Focus: Performing repetitive, rule-based tasks with efficiency and speed. AI you can hire as your customer service or accountant.</p>
+    </div>
 
-    <section class="projects fade-in">
-        <h2>Sample Projects</h2>
-        <p>
-            Projects under construction 👨🏿‍🔧.
-            Soon you will see tools and automation demos here
-        </p>
-    </section>
+    <h2>API Integration</h2>
+    <div class="card">
+      <p>All of modern businesses are doing it. Connect a smart AI with your WhatsApp Business data, automate workflows, and leverage data to drive growth and innovation.</p>
+    </div>
 
-    <section class="contact fade-in">
-        <h2>Contact Me</h2>
-        <p>Email: waynesifiso71@gmail.com</p>
-        <p>WhatsApp: +263 78 964 9257 | +263 71 015 657</p>
-        <p>Telegram: @West404</p>
-    </section>
+    <h2>Python Excel & Web Scraping</h2>
+    <div class="card">
+      <p>Automate the boring stuff. With a simple script, you can edit a million pages of Excel files, generate invoices and perform data analysis. Looking to stay ahead, we can scrape the web for you.</p>
+    </div>
 
-    <footer class="fade-in">
-        <p>Made with ❤️ + 🧠 by Wayne</p>
-    </footer>
+    <h2>GitHub Portfolio</h2>
+    <div class="card">
+      <p>Explore my latest projects, open source contributions, and coding experiments on GitHub.</p>
+      <a href="https://github.com/Westruva" target="_blank">Visit my GitHub Profile →</a>
+    </div>
 
-    <script>
-        //simple fade-in on scroll
-        const faders = document.querySelectorAll('.fade-in')
-        const appearOptions = {
-            threshold: 0.3,
-            rootMargin: '0px 0px -100px 0px'
-        };
-        const appearOnScroll = new IntersectionObserver((entries, obsever) => 
-    {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('appear');
-            obsever.unobserve(entry.target);
-        });
-    }, appearOptions);
-    faders.forEach(fader => appearOnScroll.observe(fader));
-    </script>
+    <h2>Visual Showcase</h2>
+    <div class="card">
+      <img src="wcyber_main.png" alt="WCYBER Services" />
+    </div>
+
+    <h2>Watch Me Build</h2>
+    <div class="card">
+      <video controls>
+        <source src="wcyber_edited.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="contact">
+    <p>website: <a href="https://btm24hrs.netlify.app" style="color: #fff;">btm24hrs.netlify.app</a></p>
+    <p>Calls: +263789649257</p>
+    <p>Whatsapp: +26371015657</p>
+  </div>
 </body>
 </html>
